@@ -117,8 +117,21 @@ body
 
 #profile h2
 {
-	color: white;
+	color: rgb(170, 31, 90);
 	font: 30px Comic Sans MS;
+}
+
+#profile h3
+{
+	color: white;
+	font: 25px Comic Sans MS;
+}
+
+#profile h4
+{
+	color: white;
+	font: 20px Comic Sans MS;
+	line-height: 0.5;
 }
 
 .img
