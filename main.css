@@ -186,11 +186,13 @@ body
 #AboutUs
 {
 	padding-top: 5%;
-	padding-bottom: 45%;
+	padding-bottom: 5%;
 	padding-left: 20%;
 	padding-right: 20%;
 	color: black;
 	background-color: white;
+
+	float: left;
 }
 
 .side
@@ -226,6 +228,7 @@ body
 	padding: 20px;
 	float: left;
 	width: 50%;
+	background-color: white;
 }
 
 .main h2
@@ -242,11 +245,13 @@ body
 	padding-bottom: 0%;
 }
 
-.centered h3
-{
-	color: white;
-	font: 30px Comic Sans MS;
-}
+.centered h3 {color: white; font: 30px Comic Sans MS;}
+
+.centered h4 {font: 18px Comic Sans MS; color: white;}
+
+.centered th {font-size: 40px;}
+
+.centered td {font-size: 15px;}
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -313,6 +318,8 @@ table a
 	float: left;
 	padding: 15px 15px;
 }
+
+.specialcourses {padding-top: 20%}
 
 #rental
 {
@@ -411,39 +418,31 @@ html
 	scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 300px)
+@media only screen and (max-width: 650px)
 {
     .cancelbtn
 	{
        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1350px)
-{
+	}
+	
 	.text {font-size: 11px}
 
 	#AboutUs
 	{
-		padding-top: 5%;
-		padding-bottom: 100%;
 		padding-left: 0%;
 		padding-right: 0%;
 	}
 
 	.side {width: 100%;}
 
-	.main
-	{
-		margin-left: auto;
-    	margin-right: auto;
-		width: 40%;
-	}
+	.side p {font-size: 13px;}
+
+	.main {width: 100%;}
 
 	.side img
 	{
 		padding-left: 5%;
-		width: 20%;
+		width: 30%;
 	}
 
 	.arrow
@@ -536,6 +535,158 @@ html
 		float: left;
 		padding: 10px 5px;
 	}
+
+	.centered {width: 100%;}
+
+	.centered h3 {color: white; font: 12px Comic Sans MS;}
+
+	.centered h4 {font: 12px Comic Sans MS; color: white;}
+
+	.centered th {font-size: 12px;}
+
+	.centered td {font-size: 10px;}
+
+	.centered a {font-size: 10px;}
+
+	#courses
+	{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100%;
+	}
+
+	.key h2 {font-size: 20px;}
+
+	.key h4 {font-size: 20px;}
+
+	.specialcourses {padding-top: 25%}
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1350px)
+{
+	.text {font-size: 11px}
+
+	#AboutUs
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.side {width: 100%;}
+
+	.main {width: 50%;}
+
+	.side img
+	{
+		padding-left: 5%;
+		width: 30%;
+	}
+
+	.arrow
+	{
+		float: none;
+		display: none;
+	}
+
+	#profile
+	{
+		transform: translate(0%, -10%);
+		padding: 0% 30%;
+	}
+
+	#profile h1
+	{
+		color: rgb(170, 31, 90);
+		font: 30px Comic Sans MS;
+		padding: 5%;
+		border-bottom: 1px solid;
+		border-color: rgb(170, 31, 90);
+	}
+
+	#profile h2
+	{
+		color: white;
+		font: 15px Comic Sans MS;
+	}
+
+	#profile li {text-align: left;}
+
+	.img
+	{
+		border-radius: 50%;
+		width: 100%;
+		height: auto;
+		border: 5px solid;
+		border-color: rgb(78, 78, 78);
+		transition: .3s;
+	}
+
+	.imgoverlay
+	{
+		width: 100%;
+		height: auto;
+
+		transition: .3s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+
+		font: 100% Comic Sans MS;
+		color: white;
+	}
+
+	.container
+	{
+		transform: translate(50%, 10%);
+		width: 50%;
+	}
+
+	.navbar
+	{
+		width: auto;
+		background-color: #555;
+		position: -webkit-sticky; /* For Safari */
+		position: sticky;
+		top: 0%;
+		transform: translate(0%, 0%);
+		z-index: 9998;
+
+		overflow: hidden;
+		overflow: auto;
+	}
+
+	.navbar a
+	{
+		display: block;
+		text-align: center;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 18px;
+		cursor: pointer;
+		text-decoration: none;
+
+		float: left;
+		padding: 15px 15px;
+	}
+
+	.centered {width: 100%;}
+
+	#courses
+	{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100%;
+	}
+
+	.specialcourses {padding-top: 18%}
 }
 
 @-webkit-keyframes fade
