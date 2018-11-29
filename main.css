@@ -107,8 +107,9 @@ body
 
 #profile
 {
-	transform: translate(0%, -50%);
-	padding: 0% 30%;
+	transform: translate(0%, -35%);
+	padding-left: 30%;
+	padding-right: 30%;
 }
 
 #profile h1
@@ -420,6 +421,11 @@ html
 
 @media only screen and (max-width: 650px)
 {
+	.header
+	{
+		display: none;
+	}
+
     .cancelbtn
 	{
        width: 100%;
@@ -445,15 +451,9 @@ html
 		width: 30%;
 	}
 
-	.arrow
-	{
-		float: none;
-		display: none;
-	}
-
 	#profile
 	{
-		transform: translate(0%, -10%);
+		transform: translate(0%, -5%);
 		padding: 0% 30%;
 	}
 
@@ -506,6 +506,11 @@ html
 	{
 		transform: translate(50%, 10%);
 		width: 50%;
+	}
+
+	.arrow
+	{
+		display: none;
 	}
 
 	.navbar
@@ -562,6 +567,15 @@ html
 	.key h4 {font-size: 20px;}
 
 	.specialcourses {padding-top: 25%}
+	
+	#rental
+	{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width: 651px) and (max-width: 1350px)
@@ -586,13 +600,12 @@ html
 
 	.arrow
 	{
-		float: none;
 		display: none;
 	}
 
 	#profile
 	{
-		transform: translate(0%, -10%);
+		transform: translate(0%, -5%);
 		padding: 0% 30%;
 	}
 
